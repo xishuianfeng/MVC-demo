@@ -538,11 +538,9 @@ var _globalCss = require("./global.css");
 var _app1Js = require("./app1.js");
 var _app1JsDefault = parcelHelpers.interopDefault(_app1Js);
 var _app2Js = require("./app2.js");
-var _app2JsDefault = parcelHelpers.interopDefault(_app2Js);
 var _app3Js = require("./app3.js");
 var _app4Js = require("./app4.js");
 (0, _app1JsDefault.default).init("#app1");
-(0, _app2JsDefault.default).init("#app2");
 
 },{"./reset.css":"8XPx9","./global.css":"11axS","./app1.js":"gMhIk","./app2.js":"alK4Z","./app3.js":"264pe","./app4.js":"6ZENx","@parcel/transformer-js/src/esmodule-helpers.js":"cODWh"}],"8XPx9":[function() {},{}],"11axS":[function() {},{}],"gMhIk":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -560,7 +558,7 @@ const m = {
     delete () {},
     update (data) {
         Object.assign(m.data, data);
-        eventBus.trigger("m.updated");
+        eventBus.trigger("m:updated");
         localStorage.setItem("n", m.data.n);
     },
     get () {}
@@ -642,7 +640,7 @@ const c = {
 };
 exports.default = c;
 
-},{"jquery":"hgMhh","@parcel/transformer-js/src/esmodule-helpers.js":"cODWh","./app1.css":"7FkZd"}],"hgMhh":[function(require,module,exports) {
+},{"./app1.css":"7FkZd","jquery":"hgMhh","@parcel/transformer-js/src/esmodule-helpers.js":"cODWh"}],"7FkZd":[function() {},{}],"hgMhh":[function(require,module,exports) {
 /*!
  * jQuery JavaScript Library v3.6.0
  * https://jquery.com/
@@ -7411,7 +7409,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"7FkZd":[function() {},{}],"alK4Z":[function(require,module,exports) {
+},{}],"alK4Z":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jquery = require("jquery");
 var _jqueryDefault = parcelHelpers.interopDefault(_jquery);
@@ -7444,7 +7442,7 @@ $tabBar.on("click", "li", (e)=>{
 });
 $tabBar.children().eq(index).trigger("click");
 
-},{"jquery":"hgMhh","@parcel/transformer-js/src/esmodule-helpers.js":"cODWh","./app2.css":"8RnuD"}],"8RnuD":[function() {},{}],"264pe":[function(require,module,exports) {
+},{"jquery":"hgMhh","./app2.css":"8RnuD","@parcel/transformer-js/src/esmodule-helpers.js":"cODWh"}],"8RnuD":[function() {},{}],"264pe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jquery = require("jquery");
 var _jqueryDefault = parcelHelpers.interopDefault(_jquery);
@@ -7471,7 +7469,7 @@ $square.on("click", ()=>{
     }
 });
 
-},{"./app3.css":"iOgrn","jquery":"hgMhh","@parcel/transformer-js/src/esmodule-helpers.js":"cODWh"}],"iOgrn":[function() {},{}],"6ZENx":[function(require,module,exports) {
+},{"jquery":"hgMhh","./app3.css":"iOgrn","@parcel/transformer-js/src/esmodule-helpers.js":"cODWh"}],"iOgrn":[function() {},{}],"6ZENx":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jquery = require("jquery");
 var _jqueryDefault = parcelHelpers.interopDefault(_jquery);
