@@ -1,0 +1,25 @@
+#app2 .tab-bar {
+    display: flex;
+}
+
+#app2 .tab-bar>li.selected {
+    background-color: #e6aa45;
+    color: aquamarine;
+}
+
+#app2 .tab-bar>li {
+    width: 50%;
+    border: 1px solid black;
+}
+
+#app2 .tab-content>li.active {
+    display: block;
+}
+
+#app2 .tab-bar {
+    width: 100px;
+}
+
+#app2 .tab-content>li {
+    display: none;
+}

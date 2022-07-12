@@ -1,0 +1,15 @@
+body>.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body>.page>section {
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid lightblue;
+}
+
+body {
+    overflow: hidden;
+}
